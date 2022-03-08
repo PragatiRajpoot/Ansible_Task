@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+      - name: no of runnig process
+        shell: >
+                  ps -aux | head -5
+        register: result
+      - name: show result
+        debug:
+          var: result
+
