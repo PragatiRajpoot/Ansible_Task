@@ -1,8 +1,5 @@
 ---
 - hosts: localhost
-  connection: local
-  become: true
-  
   tasks:
   - name: get service facts
     service_facts:
